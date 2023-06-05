@@ -17,8 +17,8 @@ const ExperienceCard = ({ experience}) =>{
     date={experience.date}
     iconStyle={{background: experience.iconBg}}
     icon= {
-      <div className='flex justify-center items-center w-full h-full'>
-        <img src={experience.icon} className='w-[60px] h-[60px] object-contain ' />
+      <div className='flex justify-center items-center w-full h-full '>
+        <img src={experience.icon} className='w-[60px] h-[60px] object-contain rounded-full sm:rounded-full'/>
       </div>
     }
     > 
@@ -42,7 +42,7 @@ const Experience = () => {
     <motion.div 
     variants={ textVariant()}
     >
-      {/* <p className={styles.sectionSubText}>What I have done so far</p> */}
+      <p className={styles.sectionSubText}>What I have done so far</p>
       <h2 className={styles.sectionHeadText}>EXPERIENCE</h2>
 
     </motion.div>

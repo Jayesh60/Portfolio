@@ -21,12 +21,12 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import springreen from "./company/springreen.jfif"
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
+import ellawhobird from "./ellawhobird.png"
 import carrent from "./carrent.jfif";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -60,5 +60,6 @@ export {
   carrent,
   jobit,
   tripguide,
-  python
+  python, 
+  springreen, ellawhobird,
 };

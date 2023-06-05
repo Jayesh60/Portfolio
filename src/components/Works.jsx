@@ -2,13 +2,14 @@ import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../style";
-import { github } from "../assets";
+import { github, docker } from "../assets";
 import { projects } from "../constants";
 import { sectionWrapper } from "../sectionWrapper/sectionWrapper";
 import { fadeIn, textVariant } from "../utils/motion";
+import { Link } from "react-router-dom";
 
 
-const ProjectCard = ({index,description, name, image, source_code_link , tags})=>{
+const ProjectCard = ({index,description, name, image, source_code_link ,hostlink, tags})=>{
   return(
     
     <motion.div variants={fadeIn("up", "spring", index *0.5, 0.75 )}>
@@ -18,38 +19,48 @@ const ProjectCard = ({index,description, name, image, source_code_link , tags})=
           scale:1,
           speed:450,
         }}
-        className="bg-tertiary h-[550px] p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary h-full p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[240px]" 
-        // onClick={window.open(source_code_link)}
-        >
+        <div className="relative w-full h-[240px]" >
           <img
             src={image}
             alt={name}
             className="w-full h-full object-fill rounded-2xl"
           />
         </div>
-        {/* <div className="absolute inset-0 flex justify-start m-3 card-img_hover">
+        <div className=" inset-0 flex justify-start m-3 card-img_hover" >
           <div  className="black-gradient h-10 w-10 rounded-full flex justify-center items-center cursor-pointer">
-            <img
+            <Link to={source_code_link} target="_blank" className="m-0">
+              <img
               src={github}
-              className="w-2/3 h-2/3 object-contain"
-            />
+              className="h-[100%] w-[100%] object-contain"
+              />
+            </Link>
           </div>
-        </div> */}
+          <div  className="black-gradient h-10 w-10 rounded-full flex justify-center items-center cursor-pointer">
+            <Link to={hostlink} target="_blank" className="m-0">
+              <img
+              src={docker}
+              className="h-[100%] w-[100%] object-contain"
+              />
+            </Link>
+          </div>
+        </div>
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3><span></span>
+          <h3 className="text-white font-bold text-[24px] cursor-pointer" >{name}</h3>
+          
           <p className="mt-2 text-secondary text-[16px]">{description}</p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2 ">
+        <div className="mt-4 mb-10 flex flex-wrap gap-2  ">
           {tags.map((tag)=>(
             <p key={tag.name} className={`text-[16px] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
-
+          
         </div>
+        
       </Tilt>
     </motion.div>
   
