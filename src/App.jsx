@@ -25,18 +25,15 @@ const App = () => {
             <Route path="/works" element={<Works />}></Route>
             
           </Routes>
-        </div>
-        <Routes>
+          <Routes>
           {/* <Route  exact path="/" element={<Feedbacks />}></Route> */}
           <Route exact path="/about" element={<About />}></Route>
-        </Routes>
-    
+          </Routes>
+          {/* <Tech/> */}
+          <Contact />
+        </div>
       </div>
-      <div className="relative z-0">
-        {/* <Tech/> */}
-        <Contact />
-        <StarsCanvas />
-      </div>
+
     </Router>
   );
 };
