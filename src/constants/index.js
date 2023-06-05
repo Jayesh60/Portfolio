@@ -47,15 +47,15 @@ import {
     },
     {
       title: "React Developer",
-      icon: web,
+      icon: reactjs,
     },
     {
       title: "Data Science Enthusiast",
-      icon: backend,
+      icon: python,
     },
     {
-      title: "Content Creator",
-      icon: python,
+      title: "Freelancer",
+      icon: backend,
     },
   ];
   

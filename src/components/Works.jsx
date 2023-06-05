@@ -20,7 +20,9 @@ const ProjectCard = ({index,description, name, image, source_code_link , tags})=
         }}
         className="bg-tertiary h-[550px] p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[240px]" onClick={window.open(source_code_link)}>
+        <div className="relative w-full h-[240px]" 
+        // onClick={window.open(source_code_link)}
+        >
           <img
             src={image}
             alt={name}
