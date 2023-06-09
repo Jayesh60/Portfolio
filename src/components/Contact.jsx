@@ -66,18 +66,20 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Name"
               className="bg-tertiary py-4 w-full px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              required
             />
           </label>
 
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Email</span>
             <input
-              type="text"
+              type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
               placeholder="Email"
               className="bg-tertiary py-4 w-full px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              required
             />
           </label>
 
@@ -90,6 +92,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Message"
               className="bg-tertiary py-4 w-full px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              required
             />
           </label>
           <button
