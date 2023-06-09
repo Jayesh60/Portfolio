@@ -30,8 +30,15 @@ import ellawhobird from "./ellawhobird.png"
 import carrent from "./carrent.jfif";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import linkedin from "./linkedin.png"
+import mail from "./mail.png"
+import leetcode from "./leetcode.png"
+
 
 export {
+  leetcode,
+  mail,
+  linkedin,
   logo,
   backend,
   creator,
