@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       <div
-        className={`${styles.padding} xs:h-full md:h-full bg-tertiary text-white`}
+        className={`${styles.padding} xs:h-full md:h-[100vh] bg-tertiary text-white`}
       >
         <div className="flex flex-col text-center justify-center items-center md:mb-14 mb-10 ">
           <h1 className={`${styles.sectionHeadText}`}>
