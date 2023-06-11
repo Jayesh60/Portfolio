@@ -47,7 +47,7 @@ const Contact = () => {
     <div className="xl:mt-12  flex  justify-center items-center gap-10  overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className=" md:w-full xl:w-[70%] bg-black-100 rounded-xl p-8"
+        className=" md:w-full xl:w-[70%] bg-black rounded-xl p-8"
       >
         <p className={styles.heroSubText}>Get in Touch</p>
         <h3 className={styles.heroHeadText}>Contact.</h3>

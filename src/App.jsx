@@ -10,6 +10,8 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Achievements
+  
 } from "./components";
 import Footer from "./components/Footer";
 
@@ -17,13 +19,14 @@ const App = () => {
   return (
     <Router>
       <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <div className="">
           <Navbar/>
           <Routes>
             
             <Route  exact path="/" element={<Hero />}></Route>
             <Route path="/experience" element={<Experience />}></Route>
             <Route path="/works" element={<Works />}></Route>
+            <Route path="/achievements" element={<Achievements />}></Route>
             
           </Routes>
           <Routes>
@@ -32,8 +35,9 @@ const App = () => {
           </Routes>
           {/* <Tech/> */}
           <Contact />
+          <Footer/>
         </div>
-        <Footer/>
+        
       </div>
 
     </Router>

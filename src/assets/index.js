@@ -33,9 +33,10 @@ import tripguide from "./tripguide.png";
 import linkedin from "./linkedin.png"
 import mail from "./mail.png"
 import leetcode from "./leetcode.png"
-
+import logo2 from "./j-website-favicon-color.png"
 
 export {
+  logo2,
   leetcode,
   mail,
   linkedin,
