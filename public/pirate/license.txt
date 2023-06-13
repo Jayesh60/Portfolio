@@ -1,0 +1,11 @@
+Model Information:
+* title:	BBQ Pirate || Pirate SteakIsland ||
+* source:	https://sketchfab.com/3d-models/bbq-pirate-pirate-steakisland-3fa2f3adc8aa4730a9bc1ea277d2ab82
+* author:	MoJo_GameDesign (https://sketchfab.com/Joppe_monnens)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "BBQ Pirate || Pirate SteakIsland ||" (https://sketchfab.com/3d-models/bbq-pirate-pirate-steakisland-3fa2f3adc8aa4730a9bc1ea277d2ab82) by MoJo_GameDesign (https://sketchfab.com/Joppe_monnens) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

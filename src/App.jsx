@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import {
   About,
@@ -7,9 +7,7 @@ import {
   Feedbacks,
   Hero,
   Navbar,
-  Tech,
   Works,
-  StarsCanvas,
   Achievements
   
 } from "./components";
