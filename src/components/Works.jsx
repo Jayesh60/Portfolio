@@ -21,7 +21,7 @@ const ProjectCard = ({index,description, name, image, source_code_link ,hostlink
         }}
         className="bg-tertiary h-full w-full p-5 rounded-2xl sm:w-[360px]"
       >
-        <div className="relative w-full h-[240px]" >
+        <div className="relative w-full h-[200px]" >
           <img
             src={image}
             alt={name}
@@ -47,12 +47,12 @@ const ProjectCard = ({index,description, name, image, source_code_link ,hostlink
           </div>
         </div>
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px] cursor-pointer" >{name}</h3>
+          <h3 className="text-white font-bold text-[18px] cursor-pointer" >{name}</h3>
           
-          <p className="mt-2 text-secondary text-[16px]">{description}</p>
+          <p className="mt-2 text-secondary text-[12px]">{description}</p>
         </div>
 
-        <div className="mt-4 mb-10 flex flex-wrap gap-2  ">
+        <div className="mt-4  flex flex-wrap gap-2  ">
           {tags.map((tag)=>(
             <p key={tag.name} className={`text-[16px] ${tag.color}`}>
               #{tag.name}
@@ -71,11 +71,11 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My Work</p>
-        <h2 className={styles.sectionHeadText}>Projects</h2>
+        <p className={`${styles.sectionSubText} text-[#D9E8F7]`}>My Work</p>
+        <h2 className={`${styles.sectionHeadText} text-primary`}>Projects</h2>
       </motion.div>
       <div>
-        <motion.p className="text-[17px] text-secondary">
+        <motion.p className="text-[14px] text-primary">
           Following projects showcases my skills and experience throught
           real-world examples of my projects. Each project is briefly described
           with links to its github. It reflects my ability to solve complex

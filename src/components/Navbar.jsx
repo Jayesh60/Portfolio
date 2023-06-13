@@ -2,7 +2,7 @@ import React, {  useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../style";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close, logo2 } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 sticky top-0 z-20 bg-primary `}
+      className={`${styles.paddingX} w-full flex items-center py-5 sticky top-0 z-20 bg-[#D9E8F7] `}
     >
       <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
         <Link
@@ -21,8 +21,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className=" h-10 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer">
+          <img src={logo2} alt="logo" className=" h-10 object-contain" />
+          <p className="text-[#2364D2]  text-[1.5rem] font-extrabold cursor-pointer">
             Jayesh Wadhe
           </p>
         </Link>
@@ -31,8 +31,8 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px ] font-medium cursor-pointer`}
+                active === link.title ? "text-[#00ABE4]" : "text-primary"
+              } hover:text-[#2364D2] text-[18px ] font-semibold cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               {/* <a href={`${link.id}`}>{link.title}</a> */}
@@ -44,7 +44,7 @@ const Navbar = () => {
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer"
+            className=" w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)}
           />
           <div
@@ -58,7 +58,7 @@ const Navbar = () => {
                 <li
                   key={link.id}
                   className={`${
-                    active === link.title ? "text-white" : "text-secondary"
+                    active === link.title ? "text-[#00ABE4]" : "text-[#D9E8F7]"
                   } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);

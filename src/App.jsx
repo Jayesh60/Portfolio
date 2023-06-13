@@ -16,7 +16,7 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <Router>
-      <div className="relative z-0 bg-primary">
+      <div className="relative z-0 bg-[#D9E8F7]">
         <div className="">
           <Navbar/>
           <Routes>
