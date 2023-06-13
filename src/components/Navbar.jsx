@@ -22,7 +22,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo2} alt="logo" className=" h-10 object-contain" />
-          <p className="text-[#2364D2]  text-[1.5rem] font-extrabold cursor-pointer">
+          <p className="text-[#00ABE4]  text-[1.5rem] font-extrabold cursor-pointer">
             Jayesh Wadhe
           </p>
         </Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? "text-[#00ABE4]" : "text-primary"
-              } hover:text-[#2364D2] text-[18px ] font-semibold cursor-pointer`}
+              } hover:text-[#00ABE4] text-[18px ] font-semibold cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               {/* <a href={`${link.id}`}>{link.title}</a> */}
