@@ -4,6 +4,14 @@ import { logo } from "../assets";
 import { styles } from "../style";
 
 const Footer = () => {
+  const scrollToTop = () =>{
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
+  };
   return (
     <div>
       <div
@@ -120,18 +128,18 @@ const Footer = () => {
 
           <div className="flex flex-[0.4] w-full justify-evenly px-5 xs:py-0 py-7">
             <div className="flex flex-col">
-              <Link to={'/about'}>About</Link>
-              <Link to={'/works'}>Projects</Link>
-              <Link to={'/experience'}>Experience</Link>
-              <Link to={'/achievements'}>Achievements</Link>
-              <Link to={'/contact'}>Contact</Link>
+              <Link onClick={scrollToTop} tabIndex={0} to={'/about'}>About</Link>
+              <Link onClick={scrollToTop} to={'/works'}>Projects</Link>
+              <Link onClick={scrollToTop} to={'/experience'}>Experience</Link>
+              <Link onClick={scrollToTop} to={'/achievements'}>Achievements</Link>
+              <Link onClick={scrollToTop} to={'/contact'}>Contact</Link>
             </div>
             <div className="flex flex-col" >
               <Link to={'/'}>Resume</Link>
-              <Link to={'https://www.linkedin.com/in/jayesh60/'}>Linkedin</Link>
-              <Link to={'https://github.com/jayesh60'}>Github</Link>
-              <Link to={'https://leetcode.com/jayesh60/'}>Leetcode</Link>
-              <Link to={'https://www.fiverr.com/jayeshwadhe'}>Fiverr</Link>
+              <Link  to={'https://www.linkedin.com/in/jayesh60/'} target="_blank">Linkedin</Link>
+              <Link to={'https://github.com/jayesh60'} target="_blank">Github</Link>
+              <Link to={'https://leetcode.com/jayesh60/'} target="_blank">Leetcode</Link>
+              <Link to={'https://www.fiverr.com/jayeshwadhe'} target="_blank">Fiverr</Link>
             </div>
             
           </div>
@@ -148,9 +156,7 @@ const Footer = () => {
             <div className="py-2 px-2 ">
               <Link
                 to="/contact "
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }}
+                onClick={scrollToTop}
                 className=" py-2 px-4 bg-secondary from-neutral-50 rounded-sm text-black"
               >
                 Contact Me
