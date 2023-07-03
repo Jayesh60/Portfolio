@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../style";
 import { sectionWrapper } from "../sectionWrapper/sectionWrapper";
 import { slideIn } from "../utils/motion";
+// import SeaCanvas from "./canvas/SeaCanvas";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -35,7 +36,7 @@ const Contact = () => {
         email:"",
         message:""
       })
-    },(result)=>{
+    },(error)=>{
       setLoading(false);
       console.log(error);
       alert("Something went wrong")
@@ -45,12 +46,13 @@ const Contact = () => {
 
   return (
     <div className="xl:mt-12  flex  justify-center items-center gap-10  overflow-hidden">
+      {/* <SeaCanvas/> */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className=" md:w-full xl:w-[70%] bg-black rounded-xl p-8"
+        className=" md:w-full xl:w-[70%] bg-black xs:rounded-xl p-6 xs:p-8 rounded-md"
       >
         <p className={styles.heroSubText}>Get in Touch</p>
-        <h3 className={styles.heroHeadText}>Contact.</h3>
+        <h3 className={styles.heroHeadText}>Contact</h3>
 
         <form
           ref={formRef}
@@ -86,7 +88,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
-              rows="7"
+              rows="3"
               name="message"
               value={form.message}
               onChange={handleChange}
