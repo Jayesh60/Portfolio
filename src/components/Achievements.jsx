@@ -5,7 +5,7 @@ const Achievements = () => {
   return (
     <div className='w-full h-[80vh] bg-red-100'>
       <div>
-      
+        STAY TUNED
       </div>
     </div>
   )

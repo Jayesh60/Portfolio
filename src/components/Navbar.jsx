@@ -5,6 +5,14 @@ import { navLinks } from "../constants";
 import { logo, menu, close, logo2 } from "../assets";
 
 const Navbar = () => {
+  const scrollToTop = () =>{
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
+  };
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
@@ -36,7 +44,7 @@ const Navbar = () => {
               onClick={() => setActive(link.title)}
             >
               
-              <Link to={`${link.id}`}>{link.title}</Link>
+              <Link onClick={scrollToTop} to={`${link.id}`}>{link.title}</Link>
             </li>
           ))}
         </ul>
@@ -63,6 +71,7 @@ const Navbar = () => {
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);
+                    scrollToTop();
                   }}
                 >
                   <Link to={`${link.id}`}>{link.title}</Link>
