@@ -148,6 +148,31 @@ const testimonials = [{
 ];
 
 const projects = [{
+    name: "PromptShare App",
+    description: "NEXT.JS APP, WHERE YOU CAN DISCOVER AND SHARE AI-POWERED PROMPTS TO GET 100% CORRECT RESULTS.",
+    tags: [{
+        name: "next.js 13",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "react.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "google-auth",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: ellawhobird,
+    source_code_link: "https://github.com/Jayesh60/promptshare-nextjs",
+    hostlink: "https://promptshare.netlify.com"
+  },
+
+  {
     name: "Ellawhobird.com",
     description: "BUILD AN ATTRACTIVE AND CUSTOMIZED BUSINESS PORTFOLIO FOR MY CLIENT USING  REACTJS",
     tags: [{
