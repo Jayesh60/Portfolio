@@ -28,6 +28,8 @@ import {
   ellawhobird
 } from "../assets";
 
+import promptshare from '../assets/promptshare.png'
+
 export const navLinks = [{
     id: "about",
     title: "About",
@@ -167,7 +169,7 @@ const projects = [{
         color: "orange-text-gradient",
       },
     ],
-    image: ellawhobird,
+    image: promptshare,
     source_code_link: "https://github.com/Jayesh60/promptshare-nextjs",
     hostlink: "https://promptshare.netlify.com"
   },
