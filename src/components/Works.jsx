@@ -47,7 +47,7 @@ const ProjectCard = ({index,description, name, image, source_code_link ,hostlink
           </div>
         </div>
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[18px] cursor-pointer" >{name}</h3>
+          <h3 className="text-white font-bold text-[18px]" >{name}</h3>
           
           <p className="mt-2 text-secondary text-[12px]">{description}</p>
         </div>

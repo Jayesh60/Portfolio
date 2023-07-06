@@ -49,7 +49,7 @@ const Contact = () => {
       {/* <SeaCanvas/> */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className=" md:w-full xl:w-[70%] bg-black xs:rounded-xl p-6 xs:p-8 rounded-md"
+        className=" w-full xl:w-[70%] bg-black xs:rounded-xl p-6 xs:p-8 rounded-md"
       >
         <p className={styles.heroSubText}>Get in Touch</p>
         <h3 className={styles.heroHeadText}>Contact</h3>

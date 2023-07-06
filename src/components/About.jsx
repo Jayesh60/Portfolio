@@ -39,7 +39,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-primary text-[18px] max-w-3xl leading-[30px] opacity-1'>
+        className='mt-4 text-primary text-justify text-[18px] max-w-3xl leading-[30px] opacity-1'>
 
         As an IT engineering student at Vidyavardhini's College of Engineering, Vasai, <p><strong>I am passionate about exploring the realms of web development, data science, and React development.  Through my coursework and practical projects, I have gained a solid understanding of front-end technologies like HTML, CSS, and JavaScript, as well as popular frameworks like ReactJS. </strong></p> Additionally, I have delved into the world of data science, acquiring knowledge in machine learning, data visualization, and data analysis using tools like Python, TensorFlow, and Pandas. Furthermore, I have honed my skills in React development, gaining experience in building modern web applications with reusable UI components and effective state management. With my strong foundation in IT engineering and a keen focus on web development, data science, and React development, I am eager to contribute to the dynamic field of technology and create innovative solutions for real-world challenges. 
         
