@@ -46,7 +46,6 @@ const Contact = () => {
 
   return (
     <div className="xl:mt-12  flex  justify-center items-center gap-10  overflow-hidden">
-      {/* <SeaCanvas/> */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className=" w-full xl:w-[70%] bg-tertiary xs:rounded-xl p-6 xs:p-8 rounded-md"

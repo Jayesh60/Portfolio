@@ -9,8 +9,7 @@ const Navbar = () => {
     window.scrollTo({
       top: 0, 
       behavior: 'smooth'
-      /* you can also use 'auto' behaviour
-         in place of 'smooth' */
+      
     });
   };
   const [active, setActive] = useState("");
@@ -30,7 +29,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo2} alt="logo" className=" h-10 object-contain" />
-          <p className="text-[#593C39]  text-[1.5rem] font-extrabold cursor-pointer">
+          <p className="text-tertiary  text-[1.5rem] font-extrabold cursor-pointer">
             Jayesh Wadhe
           </p>
         </Link>
