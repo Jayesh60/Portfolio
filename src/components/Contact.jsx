@@ -93,7 +93,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="Message"
-              className="bg-[#28244f] py-4 w-full px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-[#28244f] py-4 w-full px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium resize-none"
               required
             />
           </label>
