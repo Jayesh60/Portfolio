@@ -126,7 +126,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-[0.4] w-full justify-evenly px-5 xs:py-0 py-7">
+          <div className="flex flex-[0.4] md:mb-0 mb-5 w-full justify-evenly px-5 xs:py-0 py-7">
             <div className="flex flex-col">
               <Link onClick={scrollToTop} tabIndex={0} to={"/about"}>
                 About

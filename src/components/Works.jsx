@@ -37,7 +37,8 @@ const ProjectCard = ({index,description, name, image, source_code_link ,hostlink
               />
             </Link>
           </div>
-          <div  className="black-gradient h-10 w-10 rounded-full flex justify-center items-center cursor-pointer">
+          {hostlink?(
+            <div  className="black-gradient h-10 w-10 rounded-full flex justify-center items-center cursor-pointer">
             <Link to={hostlink} target="_blank" className="m-0">
               <img
               src={docker}
@@ -45,6 +46,9 @@ const ProjectCard = ({index,description, name, image, source_code_link ,hostlink
               />
             </Link>
           </div>
+          ):(
+            <></>
+          )}
         </div>
         <div className="mt-5">
           <h3 className="text-white font-bold text-[18px]" >{name}</h3>
