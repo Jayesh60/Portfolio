@@ -49,7 +49,7 @@ const Contact = () => {
       {/* <SeaCanvas/> */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className=" w-full xl:w-[70%] bg-black xs:rounded-xl p-6 xs:p-8 rounded-md"
+        className=" w-full xl:w-[70%] bg-tertiary xs:rounded-xl p-6 xs:p-8 rounded-md"
       >
         <p className={styles.heroSubText}>Get in Touch</p>
         <h3 className={styles.heroHeadText}>Contact</h3>
@@ -67,7 +67,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="Name"
-              className="bg-tertiary py-4 w-full px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-[#28244f] py-4 w-full px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               required
             />
           </label>
@@ -80,7 +80,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="Email"
-              className="bg-tertiary py-4 w-full px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-[#28244f] py-4 w-full px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               required
             />
           </label>
@@ -93,13 +93,13 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="Message"
-              className="bg-tertiary py-4 w-full px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-[#28244f] py-4 w-full px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               required
             />
           </label>
           <button
             type="submit"
-            className="bg-tertiary py-3 px-16 xl:w-[30%] flex text-center justify-center items-center lg:w-[50%] md:w-full font-bold shadow-md shadow-primary rounded-xl outline-none"
+            className="bg-[#28244f] py-3 px-16 xl:w-[30%] flex text-center justify-center items-center lg:w-[50%] md:w-full font-bold shadow-md shadow-primary rounded-xl outline-none"
           >
             {loading ? "Sending..." : "Send"}
           </button>

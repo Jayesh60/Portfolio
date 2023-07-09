@@ -18,10 +18,10 @@ const Footer = () => {
         className={`${styles.padding} xs:h-full md:h-full bg-tertiary text-white`}
       >
         <div className="flex flex-col text-center justify-center items-center  ">
-          <h1 className=" text-[2.2rem] font-thin">
+          <h1 className=" text-[2.2rem] font-thin text-[#D9E8F7]">
             Create Moments not things
           </h1>
-          <p className={`${styles.sectionSubText}  font-light`}>
+          <p className={`${styles.sectionSubText} text-[#D9E8F7]  font-light`}>
             Transforming Ideas into Seamless Digital Experiences
           </p>
         </div>
@@ -127,7 +127,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-[0.4] md:mb-0 mb-5 w-full justify-evenly px-5 xs:py-0 py-7">
-            <div className="flex flex-col">
+            <div className="flex flex-col text-[#D9E8F7]">
               <Link onClick={scrollToTop} tabIndex={0} to={"/about"}>
                 About
               </Link>
@@ -144,7 +144,7 @@ const Footer = () => {
                 Contact
               </Link>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col text-[#D9E8F7]">
               <Link to={"/"}>Resume</Link>
               <Link
                 to={"https://www.linkedin.com/in/jayesh60/"}
@@ -165,10 +165,10 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col justify-center items-center  flex-[0.4]">
-            <h1 className="text-white font-black md:text-[30px] sm:text-[25px] xs:text-[25px] font-serif">
+            <h1 className="text-[#D9E8F7] font-black md:text-[30px] sm:text-[25px] xs:text-[25px] font-serif">
               Code. Create. Inspire.
             </h1>
-            <p className="font-thin py-2  text-center ">
+            <p className="font-thin py-2 text-[#D9E8F7] text-center ">
               Together, we can unlock the endless possibilities that lie within
               the world of web development. Contact me today to start a
               conversation and embark on an exciting journey of transformation.
@@ -177,7 +177,7 @@ const Footer = () => {
               <Link
                 to="/contact "
                 onClick={scrollToTop}
-                className=" py-2 px-4 bg-secondary from-neutral-50 rounded-sm text-black"
+                className=" py-2 px-4 hover:bg-secondary bg-[#D9E8F7] text-black from-neutral-50 rounded-sm "
               >
                 Contact Me
               </Link>
@@ -198,7 +198,7 @@ const Footer = () => {
             Jayesh Wadhe
           </a>
         </span>
-        <span className="w-full sm:w-44 inline-flex sm:ml-auto sm:mt-0 mt-4 mr-3 items-center justify-center sm:justify-start">Made with {"\u2764"} by Me</span>
+        <span className="w-full text-[#D9E8F7] sm:w-44 inline-flex sm:ml-auto sm:mt-0 mt-4 mr-3 items-center justify-center sm:justify-start">Made with {"\u2764"} by Me</span>
         <span className=" hidden sm:inline-flex  sm:ml-auto sm:mt-0 mt-4 mr-3 justify-center sm:justify-start">
           <a className="text-gray-500">
             <svg
