@@ -29,6 +29,7 @@ import {
 } from "../assets";
 
 import promptshare from '../assets/promptshare.png'
+import music from '../assets/music.png'
 
 export const navLinks = [{
     id: "about",
@@ -42,10 +43,10 @@ export const navLinks = [{
     id: "experience",
     title: "Experience",
   },
-  {
-    id: "achievements",
-    title: "Achievements",
-  },
+  // {
+  //   id: "achievements",
+  //   title: "Achievements",
+  // },
   {
     id: "contact",
     title: "Contact",
@@ -57,7 +58,7 @@ const services = [{
     icon: web,
   },
   {
-    title: "React Developer",
+    title: "MERN Stack",
     icon: mobile,
   },
   {
@@ -174,6 +175,28 @@ const projects = [{
     hostlink: "https://promptshare.netlify.com"
   },
 
+  
+  
+  {
+    name: "Music Recommendation System",
+    description: "IMPLEMENTED A CUTTING-EDGE SONG RECOMMENDATION SYSTEM USING FLET TECHNOLOGY. USING ADVANCED VECTORIZATION TECHNIQUES, I ALSO CREATED A WEB APP USING FLET",
+    tags: [{
+        name: "python",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "flet",
+        color: "green-text-gradient",
+      },
+      {
+        name: "data science",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: music,
+    source_code_link: "https://github.com/Jayesh60/Song-recommendations-system",
+    hostlink:"",
+  },
   {
     name: "Ellawhobird.com",
     description: "BUILD AN ATTRACTIVE AND CUSTOMIZED BUSINESS PORTFOLIO FOR MY CLIENT USING  REACTJS",
@@ -193,27 +216,6 @@ const projects = [{
     image: ellawhobird,
     source_code_link: "https://github.com/Jayesh60/ellawhobird.com",
     hostlink: "https://ellawhobird.netlify.com"
-  },
-  
-  {
-    name: "Music Recommendation System",
-    description: "IMPLEMENTED A CUTTING-EDGE SONG RECOMMENDATION SYSTEM USING FLET TECHNOLOGY. USING ADVANCED VECTORIZATION TECHNIQUES, I ALSO CREATED A WEB APP USING FLET",
-    tags: [{
-        name: "python",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "flet",
-        color: "green-text-gradient",
-      },
-      {
-        name: "data science",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/Jayesh60/Song-recommendations-system",
-    hostlink:"",
   },
   {
     name: "Youtube Clone",
