@@ -198,7 +198,7 @@ const Footer = () => {
             Jayesh Wadhe
           </a>
         </span>
-        <span className="w-full text-[#D9E8F7] sm:w-44 inline-flex sm:ml-auto sm:mt-0 mt-4 mr-3 items-center justify-center sm:justify-start">Made with {"\u2764"} by Me</span>
+        <span className="w-full text-[#D9E8F7] sm:w-44 inline-flex sm:ml-auto mr-3 items-center justify-center sm:justify-start">Made with {"\u2764"} by Me</span>
         <span className=" hidden sm:inline-flex  sm:ml-auto sm:mt-0 mt-4 mr-3 justify-center sm:justify-start">
           <a className="text-gray-500">
             <svg
