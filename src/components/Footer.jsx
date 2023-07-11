@@ -177,7 +177,7 @@ const Footer = () => {
               <Link
                 to="/contact "
                 onClick={scrollToTop}
-                className=" py-2 px-4 hover:bg-secondary bg-[#D9E8F7] text-black from-neutral-50 rounded-sm "
+                className=" py-2 px-4 hover:bg-secondary bg-[#D9E8F7] text-black from-neutral-50 rounded-sm transform ease-in-out duration-500"
               >
                 Contact Me
               </Link>

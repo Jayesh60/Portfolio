@@ -9,7 +9,7 @@ import { sectionWrapper } from '../sectionWrapper/sectionWrapper'
 
 const ServiceCard = ({index , icon , title}) =>{
   return(
-    <Tilt className='xs:w-[250px] w-full'>
+    <Tilt className='ease-in-out duration-75 xs:w-[250px] w-full'>
       <motion.div
         variants={fadeIn("right", "spring", 0.5*index, 0.75)}
         className='w-ful p-[1px] rounded-[20px] shadow-card'>
