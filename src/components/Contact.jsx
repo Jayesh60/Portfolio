@@ -51,7 +51,7 @@ const Contact = () => {
         className=" w-full xl:w-[70%] bg-tertiary xs:rounded-xl p-6 xs:p-8 rounded-md"
       >
         <p className={styles.heroSubText}>Get in Touch</p>
-        <h3 className={styles.heroHeadText}>Contact</h3>
+        {/* <h3 className={styles.heroHeadText}>Contact</h3> */}
 
         <form
           ref={formRef}
