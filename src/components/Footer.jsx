@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { logo } from "../assets";
 import { styles } from "../style";
+import Resume from '../assets/RESUME_JULY.pdf'
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -145,7 +146,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className="flex flex-col text-[#D9E8F7]">
-              <Link to={"/"}>Resume</Link>
+              <a download={"Resume.pdf"} href={Resume}>Resume</a>
               <Link
                 to={"https://www.linkedin.com/in/jayesh60/"}
                 target="_blank"
