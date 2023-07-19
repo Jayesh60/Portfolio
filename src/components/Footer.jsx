@@ -146,7 +146,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className="flex flex-col text-[#D9E8F7]">
-              <a download={"Resume.pdf"} href={Resume}>Resume</a>
+              <a download={"JayeshWadhe_Resume.pdf"} href={Resume}>Resume</a>
               <Link
                 to={"https://www.linkedin.com/in/jayesh60/"}
                 target="_blank"
