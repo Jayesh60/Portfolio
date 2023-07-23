@@ -172,7 +172,7 @@ const projects = [{
     ],
     image: promptshare,
     source_code_link: "https://github.com/Jayesh60/promptshare-nextjs",
-    hostlink: "https://promptshare.netlify.com"
+    hostlink: "https://promptshare-next.vercel.app/"
   },
 
   
