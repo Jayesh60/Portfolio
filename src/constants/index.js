@@ -117,7 +117,7 @@ const experiences = [
     company_name: "Springreen",
     icon: springreen,
     iconBg: "black",
-    date: "June 2023 - present",
+    date: "1 June 2023 - 1 Sep 2023",
     points: [
       "Developing and maintaining web applications using Flask and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -134,20 +134,7 @@ const testimonials = [{
     company: "Ellawhobird designs",
     image: ellawhobird,
   },
-  {
-    testimonial: "DEMO I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial: " DEMO After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
+  
 ];
 
 const projects = [{
@@ -198,26 +185,6 @@ const projects = [{
     hostlink:"",
   },
   {
-    name: "Ellawhobird.com",
-    description: "BUILD AN ATTRACTIVE AND CUSTOMIZED BUSINESS PORTFOLIO FOR MY CLIENT USING  REACTJS",
-    tags: [{
-        name: "react",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "freelance",
-        color: "green-text-gradient",
-      },
-      {
-        name: "business-portfolio",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: ellawhobird,
-    source_code_link: "https://github.com/Jayesh60/ellawhobird.com",
-    hostlink: "https://ellawhobird.netlify.com"
-  },
-  {
     name: "Youtube Clone",
     description: "REACT YOUTUBE CLONE WITH THE BASIC FUNTIONALITIES LIKE SEARCH PAGE CONNECTION, URL DISPATCHER, DYNAMICITY AND STICKINESS. AND DIVIDING A PAGE INTO COMPONENETS, LIKE HEADER, FOOTER, SIDEBAR, ETC.",
     tags: [{
@@ -237,6 +204,26 @@ const projects = [{
     source_code_link: "https://github.com/Jayesh60/YoutubeUI",
     hostlink:"",
   },
+  {
+    name: "Ellawhobird.com",
+    description: "BUILD AN ATTRACTIVE AND CUSTOMIZED BUSINESS PORTFOLIO FOR MY CLIENT USING  REACTJS",
+    tags: [{
+        name: "react",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "freelance",
+        color: "green-text-gradient",
+      },
+      {
+        name: "business-portfolio",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ellawhobird,
+    source_code_link: "https://github.com/Jayesh60/ellawhobird.com",
+    hostlink: "https://ellawhobird.netlify.com"
+  }
 ];
 
 export {
