@@ -42,7 +42,6 @@ const Navbar = () => {
               } hover:text-[brown] text-[18px ] font-semibold cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              
               <Link onClick={scrollToTop} to={`${link.id}`}>{link.title}</Link>
             </li>
           ))}

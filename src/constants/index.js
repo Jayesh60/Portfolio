@@ -30,6 +30,7 @@ import {
 
 import promptshare from '../assets/promptshare.png'
 import music from '../assets/music.png'
+import dotsyndicate from "../assets/company/dotsyndicate.png"
 
 export const navLinks = [{
     id: "about",
@@ -54,7 +55,7 @@ export const navLinks = [{
 ];
 
 const services = [{
-    title: "Web Developer",
+    title: "Next Js",
     icon: web,
   },
   {
@@ -62,11 +63,11 @@ const services = [{
     icon: mobile,
   },
   {
-    title: "Data Science",
+    title: "Freelancer",
     icon: creator,
   },
   {
-    title: "Freelancer",
+    title: "Data Science",
     icon: backend,
   },
 ];
@@ -111,10 +112,24 @@ const technologies = [{
 ];
 
 const experiences = [
-
   {
     title: "Full Stack Developer Intern",
-    company_name: "Springreen",
+    company_name: "DotSyndicate, Mumbai",
+    company_website : "https://www.dotsyndicate.com/",
+    icon: dotsyndicate,
+    iconBg: "black",
+    date: "1 Nov 2023 - present",
+    points: [
+      "Developing and maintaining web applications using NextJs, ReactJS and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ]
+  },
+  {
+    title: "Full Stack Developer Intern",
+    company_name: "Springreen, Chennai",
+    company_website : "https://springreen.in/",
     icon: springreen,
     iconBg: "black",
     date: "1 June 2023 - 1 Sep 2023",

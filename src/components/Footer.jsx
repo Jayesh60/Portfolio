@@ -92,7 +92,7 @@ const Footer = () => {
               </Link>
 
               <Link
-                to="mailto:jwadhe46@gmail.com"
+                to="mailto:workwithwadhe@gmail.com"
                 target="_blank"
                 className=" flex md:flex-col items-center gap-2"
               >
@@ -201,7 +201,7 @@ const Footer = () => {
         </span>
         <span className="w-full text-[#D9E8F7] sm:w-44 inline-flex sm:ml-auto mr-3 items-center justify-center sm:justify-start">Made with {"\u2764"} by Me</span>
         <span className=" hidden sm:inline-flex  sm:ml-auto sm:mt-0 mt-4 mr-3 justify-center sm:justify-start">
-          <a className="text-gray-500">
+          {/* <a className="text-gray-500">
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -212,8 +212,8 @@ const Footer = () => {
             >
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
             </svg>
-          </a>
-          <a className="ml-3 text-gray-500">
+          </a> */}
+          {/* <a className="ml-3 text-gray-500">
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -238,8 +238,8 @@ const Footer = () => {
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
-          </a>
-          <a className="ml-3 text-gray-500">
+          </a> */}
+          <a href="https://www.linkedin.com/in/jayesh60" className="ml-3 text-gray-500">
             <svg
               fill="currentColor"
               stroke="currentColor"
