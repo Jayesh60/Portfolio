@@ -27,8 +27,8 @@ import {
   threejs,
   ellawhobird
 } from "../assets";
-
-import promptshare from '../assets/promptshare.png'
+import thirdweb from "../assets/tech/thirdweb.jpg"
+import promptshare from '../assets/tech/promptshare.jpg'
 import music from '../assets/music.png'
 import dotsyndicate from "../assets/company/dotsyndicate.png"
 
@@ -152,7 +152,8 @@ const testimonials = [{
   
 ];
 
-const projects = [{
+const projects = [
+  {
     name: "PromptShare App",
     description: "NEXT.JS APP, WHERE YOU CAN DISCOVER AND SHARE AI-POWERED PROMPTS TO GET 100% CORRECT RESULTS.",
     tags: [{
@@ -175,6 +176,26 @@ const projects = [{
     image: promptshare,
     source_code_link: "https://github.com/Jayesh60/promptshare-nextjs",
     hostlink: "https://promptshare-next.vercel.app/"
+  },
+  {
+    name: "3rd Web agency website",
+    description: "Freelance Project - #1Delivery",
+    tags: [{
+        name: "next.js 13",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "react.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind/Framer-motion",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: thirdweb,
+    // source_code_link: "https://github.com/Jayesh60/promptshare-nextjs",
+    hostlink: "https://3rdweb.io/"
   },
 
   
