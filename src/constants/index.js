@@ -220,6 +220,27 @@ const projects = [
     source_code_link: "https://github.com/Jayesh60/Song-recommendations-system",
     hostlink:"",
   },
+  
+  {
+    name: "Ellawhobird.com",
+    description: "BUILD AN ATTRACTIVE AND CUSTOMIZED BUSINESS PORTFOLIO FOR MY CLIENT USING  REACTJS",
+    tags: [{
+        name: "react",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "freelance",
+        color: "green-text-gradient",
+      },
+      {
+        name: "business-portfolio",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ellawhobird,
+    // source_code_link: "https://github.com/Jayesh60/ellawhobird.com",
+    hostlink: "https://ellawhobird.netlify.com"
+  },
   {
     name: "Youtube Clone",
     description: "REACT YOUTUBE CLONE WITH THE BASIC FUNTIONALITIES LIKE SEARCH PAGE CONNECTION, URL DISPATCHER, DYNAMICITY AND STICKINESS. AND DIVIDING A PAGE INTO COMPONENETS, LIKE HEADER, FOOTER, SIDEBAR, ETC.",
@@ -240,26 +261,6 @@ const projects = [
     source_code_link: "https://github.com/Jayesh60/YoutubeUI",
     hostlink:"",
   },
-  {
-    name: "Ellawhobird.com",
-    description: "BUILD AN ATTRACTIVE AND CUSTOMIZED BUSINESS PORTFOLIO FOR MY CLIENT USING  REACTJS",
-    tags: [{
-        name: "react",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "freelance",
-        color: "green-text-gradient",
-      },
-      {
-        name: "business-portfolio",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: ellawhobird,
-    source_code_link: "https://github.com/Jayesh60/ellawhobird.com",
-    hostlink: "https://ellawhobird.netlify.com"
-  }
 ];
 
 export {
