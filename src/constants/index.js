@@ -28,7 +28,7 @@ import {
   ellawhobird
 } from "../assets";
 import thirdweb from "../assets/thirdweb.jpg"
-import promptshare from '../assets/tech/promptshare.jpg'
+import promptshare from '../assets/promptshare.jpg'
 import music from '../assets/music.png'
 import dotsyndicate from "../assets/company/dotsyndicate.png"
 
