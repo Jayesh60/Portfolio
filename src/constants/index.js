@@ -27,7 +27,7 @@ import {
   threejs,
   ellawhobird
 } from "../assets";
-import thirdweb from "../assets/tech/thirdweb.jpg";
+import thirdweb from "../assets/thirdweb.jpg"
 import promptshare from '../assets/tech/promptshare.jpg'
 import music from '../assets/music.png'
 import dotsyndicate from "../assets/company/dotsyndicate.png"
