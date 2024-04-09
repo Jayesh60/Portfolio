@@ -5,6 +5,7 @@ import { styles } from "../style";
 import Resume from '../assets/RESUME_JULY.pdf'
 
 const Footer = () => {
+  const date = new Date();
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -13,6 +14,7 @@ const Footer = () => {
          in place of 'smooth' */
     });
   };
+
   return (
     <div>
       <div
@@ -189,7 +191,7 @@ const Footer = () => {
 
       <div className="flex justify-between items-center text-justify bg-[#28244f] md:h-[8.5vh] h-[8.5vh]">
         <span className="hidden sm:flex text-sm text-gray-500 sm:ml-4 sm:pl-4  sm:py-2 sm:mt-0 mt-4">
-          © 2023  —
+          © {date.getFullYear()}  —
           <a
             href="https://www.linkedin.com/in/jayesh60"
             className="text-gray-600 ml-1"

@@ -1,10 +1,10 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 import { styles } from "../style";
 import { sectionWrapper } from "../sectionWrapper/sectionWrapper";
 import { slideIn } from "../utils/motion";
-// import SeaCanvas from "./canvas/SeaCanvas";
+import { db } from "../utils/firebase";
+import { doc, setDoc } from "firebase/firestore";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -17,30 +17,20 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    emailjs.send("portfolio_jayesh", "template_zaeutl2", {
-      from_name : form.name,
-      to_name: "Jayesh",
-      from_email: form.email,
-      to_email: "jwadhe46@gmail.com",
-      message: form.message
-    }, 
-    "nnEYEDwOjnxsxdiUK")
-    .then(()=>{
+    await setDoc(doc(db, "contact_enquiry", form.name+"-"+form.email), {
+      name: form.name,
+      email: form.email,
+      message: form.message,
+    }).then(() => {
       setLoading(false);
-      alert("Thank you We will get back to you!")
       setForm({
-        name:"",
-        email:"",
-        message:""
-      })
-    },(error)=>{
-      setLoading(false);
-      console.log(error);
-      alert("Something went wrong")
-
+        name: "",
+        email: "",
+        message: "",
+      });
     });
   };
 
