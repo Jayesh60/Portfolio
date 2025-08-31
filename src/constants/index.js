@@ -29,6 +29,7 @@ import {
 } from "../assets";
 import thirdweb from "../assets/thirdweb.jpg";
 import promptshare from "../assets/promptshare.jpg";
+import alphatech from "../assets/projects/alphatech.png";
 import music from "../assets/music.png";
 import dotsyndicate from "../assets/company/dotsyndicate.png";
 
@@ -181,6 +182,27 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Alphatech",
+    description: "NEXT.JS APP, ECommerce Store Website.",
+    tags: [
+      {
+        name: "next.js 13",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tailwind css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: alphatech,
+    // source_code_link: "https://github.com/Jayesh60/promptshare-nextjs",
+    hostlink: "https://alphatechtz.com/",
+  },
+  {
     name: "PromptShare App",
     description:
       "NEXT.JS APP, WHERE YOU CAN DISCOVER AND SHARE AI-POWERED PROMPTS TO GET 100% CORRECT RESULTS.",
@@ -227,49 +249,6 @@ const projects = [
     // source_code_link: "https://github.com/Jayesh60/promptshare-nextjs",
     hostlink: "https://3rdweb.io/",
   },
-
-  // {
-  //   name: "Ellawhobird.com",
-  //   description: "BUILD AN ATTRACTIVE AND CUSTOMIZED BUSINESS PORTFOLIO FOR MY CLIENT USING  REACTJS",
-  //   tags: [{
-  //       name: "react",
-  //       color: "orange-text-gradient",
-  //     },
-  //     {
-  //       name: "freelance",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "business-portfolio",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: ellawhobird,
-  //   // source_code_link: "https://github.com/Jayesh60/ellawhobird.com",
-  //   hostlink: "https://ellawhobird.netlify.com"
-  // },
-  // {
-  //   name: "Youtube Clone",
-  //   description:
-  //     "REACT YOUTUBE CLONE WITH THE BASIC FUNTIONALITIES LIKE SEARCH PAGE CONNECTION, URL DISPATCHER, DYNAMICITY AND STICKINESS. AND DIVIDING A PAGE INTO COMPONENETS, LIKE HEADER, FOOTER, SIDEBAR, ETC.",
-  //   tags: [
-  //     {
-  //       name: "reactjs",
-  //       color: "orange-text-gradient",
-  //     },
-  //     {
-  //       name: "html",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: tripguide,
-  //   source_code_link: "https://github.com/Jayesh60/YoutubeUI",
-  //   hostlink: "",
-  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
