@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { logo } from "../assets";
 import { styles } from "../style";
-import Resume from '../assets/RESUME_JULY.pdf'
+import Resume from "../assets/jayesh_resume.pdf";
 
 const Footer = () => {
   const date = new Date();
@@ -10,8 +10,6 @@ const Footer = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-      /* you can also use 'auto' behaviour
-         in place of 'smooth' */
     });
   };
 
@@ -148,7 +146,9 @@ const Footer = () => {
               </Link>
             </div>
             <div className="flex flex-col text-[#D9E8F7]">
-              <a download={"JayeshWadhe_Resume.pdf"} href={Resume}>Resume</a>
+              <a download={"jayesh_resume.pdf"} href={Resume}>
+                Resume
+              </a>
               <Link
                 to={"https://www.linkedin.com/in/jayesh60/"}
                 target="_blank"
@@ -191,7 +191,7 @@ const Footer = () => {
 
       <div className="flex justify-between items-center text-justify bg-[#28244f] md:h-[8.5vh] h-[8.5vh]">
         <span className="hidden sm:flex text-sm text-gray-500 sm:ml-4 sm:pl-4  sm:py-2 sm:mt-0 mt-4">
-          © {date.getFullYear()}  —
+          © {date.getFullYear()} —
           <a
             href="https://www.linkedin.com/in/jayesh60"
             className="text-gray-600 ml-1"
@@ -201,7 +201,9 @@ const Footer = () => {
             Jayesh Wadhe
           </a>
         </span>
-        <span className="w-full text-[#D9E8F7] sm:w-44 inline-flex sm:ml-auto mr-3 items-center justify-center sm:justify-start">Made with {"\u2764"} by Me</span>
+        <span className="w-full text-[#D9E8F7] sm:w-44 inline-flex sm:ml-auto mr-3 items-center justify-center sm:justify-start">
+          Made with {"\u2764"} by Me
+        </span>
         <span className=" hidden sm:inline-flex  sm:ml-auto sm:mt-0 mt-4 mr-3 justify-center sm:justify-start">
           {/* <a className="text-gray-500">
             <svg
@@ -241,7 +243,10 @@ const Footer = () => {
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
           </a> */}
-          <a href="https://www.linkedin.com/in/jayesh60" className="ml-3 text-gray-500">
+          <a
+            href="https://www.linkedin.com/in/jayesh60"
+            className="ml-3 text-gray-500"
+          >
             <svg
               fill="currentColor"
               stroke="currentColor"
@@ -260,7 +265,6 @@ const Footer = () => {
           </a>
         </span>
       </div>
-
     </div>
   );
 };

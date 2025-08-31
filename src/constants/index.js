@@ -25,14 +25,15 @@ import {
   jobit,
   tripguide,
   threejs,
-  ellawhobird
+  ellawhobird,
 } from "../assets";
-import thirdweb from "../assets/thirdweb.jpg"
-import promptshare from '../assets/promptshare.jpg'
-import music from '../assets/music.png'
-import dotsyndicate from "../assets/company/dotsyndicate.png"
+import thirdweb from "../assets/thirdweb.jpg";
+import promptshare from "../assets/promptshare.jpg";
+import music from "../assets/music.png";
+import dotsyndicate from "../assets/company/dotsyndicate.png";
 
-export const navLinks = [{
+export const navLinks = [
+  {
     id: "about",
     title: "About",
   },
@@ -54,25 +55,27 @@ export const navLinks = [{
   },
 ];
 
-const services = [{
-    title: "Next Js",
+const services = [
+  {
+    title: "Full Stack Development",
     icon: web,
   },
   {
-    title: "MERN Stack",
+    title: "System Architecture",
+    icon: backend,
+  },
+  {
+    title: "AI Enthusiast",
     icon: mobile,
   },
   {
-    title: "Freelancer",
+    title: "Freelance Consultant",
     icon: creator,
-  },
-  {
-    title: "Data Science",
-    icon: backend,
   },
 ];
 
-const technologies = [{
+const technologies = [
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -89,10 +92,6 @@ const technologies = [{
     icon: reactjs,
   },
   {
-    name: "Python",
-    icon: python,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -104,32 +103,45 @@ const technologies = [{
     name: "MongoDB",
     icon: mongodb,
   },
-  
+
   {
     name: "git",
     icon: git,
-  }
+  },
 ];
 
 const experiences = [
   {
-    title: "Full Stack Developer Intern",
+    title: "Full Stack Developer I",
     company_name: "DotSyndicate, Mumbai",
-    company_website : "https://www.dotsyndicate.com/",
+    company_website: "https://www.dotsyndicate.com/",
     icon: dotsyndicate,
     iconBg: "black",
-    date: "1 Nov 2023 - present",
+    date: "1 June 2024 - present",
+    points: [
+      "Architected scalable frontend UIs using React.js, Next.js, and Tanstack-Router with Tailwind CSS for high-traffic applications.",
+      "Developed robust backend systems with Node.js, TypeScript, Express, and MongoDB, integrating gRPC and WebSocket communication.",
+      "Built admin dashboards using Mantine and ShadCN UI with React-Redux, React Query, and Zustand for state management.",
+      "Implemented Redis caching and AWS infrastructure for secure, scalable deployment solutions.",
+    ],
+  },
+  {
+    title: "Full Stack Developer Intern",
+    company_name: "DotSyndicate, Mumbai",
+    company_website: "https://www.dotsyndicate.com/",
+    icon: dotsyndicate,
+    iconBg: "black",
+    date: "1 Nov 2023 - 31 May 2024",
     points: [
       "Developing and maintaining web applications using NextJs, ReactJS and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
-    ]
+    ],
   },
   {
     title: "Full Stack Developer Intern",
     company_name: "Springreen, Chennai",
-    company_website : "https://springreen.in/",
+    company_website: "https://springreen.in/",
     icon: springreen,
     iconBg: "black",
     date: "1 June 2023 - 1 Sep 2023",
@@ -138,25 +150,42 @@ const experiences = [
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
-    ]
-  }
+    ],
+  },
 ];
 
-const testimonials = [{
-    testimonial: "Fantastic Communication and really listened to what I wanted!",
+const testimonials = [
+  {
+    testimonial:
+      "His technical skills are above par. His grasping power has been commendable  Given any task, he analyses the problem really well before jump of on the solution  He has demonstrated his skills at different platforms at different times Jayesh in the team means the perfect team player and a good colleague. ",
+    name: "Rizaan Kerawala",
+    designation: "SE III",
+    company: "JP Morgan Chase",
+  },
+  {
+    testimonial:
+      "Jayesh can adapt to adverse situations and come up with a solution. This is one of the qualities that I really liked about Jayesh. I liked his skills in Next JS - Frontend Development.",
+    name: "Ayushman Kumar",
+    designation: "",
+    company: "FlowDrive AI",
+  },
+  {
+    testimonial:
+      "Fantastic Communication and really listened to what I wanted!",
     name: "Angelo Brown",
     designation: "Founder",
     company: "Ellawhobird designs",
     image: ellawhobird,
   },
-  
 ];
 
 const projects = [
   {
     name: "PromptShare App",
-    description: "NEXT.JS APP, WHERE YOU CAN DISCOVER AND SHARE AI-POWERED PROMPTS TO GET 100% CORRECT RESULTS.",
-    tags: [{
+    description:
+      "NEXT.JS APP, WHERE YOU CAN DISCOVER AND SHARE AI-POWERED PROMPTS TO GET 100% CORRECT RESULTS.",
+    tags: [
+      {
         name: "next.js 13",
         color: "orange-text-gradient",
       },
@@ -175,12 +204,13 @@ const projects = [
     ],
     image: promptshare,
     source_code_link: "https://github.com/Jayesh60/promptshare-nextjs",
-    hostlink: "https://promptshare-next.vercel.app/"
+    hostlink: "https://promptshare-next.vercel.app/",
   },
   {
     name: "3rd Web agency website",
     description: "Freelance Project - #1Delivery",
-    tags: [{
+    tags: [
+      {
         name: "next.js 13",
         color: "orange-text-gradient",
       },
@@ -195,78 +225,51 @@ const projects = [
     ],
     image: thirdweb,
     // source_code_link: "https://github.com/Jayesh60/promptshare-nextjs",
-    hostlink: "https://3rdweb.io/"
+    hostlink: "https://3rdweb.io/",
   },
 
-  
-  
-  {
-    name: "Music Recommendation System",
-    description: "IMPLEMENTED A CUTTING-EDGE SONG RECOMMENDATION SYSTEM USING FLET TECHNOLOGY. USING ADVANCED VECTORIZATION TECHNIQUES, I ALSO CREATED A WEB APP USING FLET",
-    tags: [{
-        name: "python",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "flet",
-        color: "green-text-gradient",
-      },
-      {
-        name: "data science",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: music,
-    source_code_link: "https://github.com/Jayesh60/Song-recommendations-system",
-    hostlink:"",
-  },
-  
-  {
-    name: "Ellawhobird.com",
-    description: "BUILD AN ATTRACTIVE AND CUSTOMIZED BUSINESS PORTFOLIO FOR MY CLIENT USING  REACTJS",
-    tags: [{
-        name: "react",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "freelance",
-        color: "green-text-gradient",
-      },
-      {
-        name: "business-portfolio",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: ellawhobird,
-    // source_code_link: "https://github.com/Jayesh60/ellawhobird.com",
-    hostlink: "https://ellawhobird.netlify.com"
-  },
-  {
-    name: "Youtube Clone",
-    description: "REACT YOUTUBE CLONE WITH THE BASIC FUNTIONALITIES LIKE SEARCH PAGE CONNECTION, URL DISPATCHER, DYNAMICITY AND STICKINESS. AND DIVIDING A PAGE INTO COMPONENETS, LIKE HEADER, FOOTER, SIDEBAR, ETC.",
-    tags: [{
-        name: "reactjs",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/Jayesh60/YoutubeUI",
-    hostlink:"",
-  },
+  // {
+  //   name: "Ellawhobird.com",
+  //   description: "BUILD AN ATTRACTIVE AND CUSTOMIZED BUSINESS PORTFOLIO FOR MY CLIENT USING  REACTJS",
+  //   tags: [{
+  //       name: "react",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "freelance",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "business-portfolio",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: ellawhobird,
+  //   // source_code_link: "https://github.com/Jayesh60/ellawhobird.com",
+  //   hostlink: "https://ellawhobird.netlify.com"
+  // },
+  // {
+  //   name: "Youtube Clone",
+  //   description:
+  //     "REACT YOUTUBE CLONE WITH THE BASIC FUNTIONALITIES LIKE SEARCH PAGE CONNECTION, URL DISPATCHER, DYNAMICITY AND STICKINESS. AND DIVIDING A PAGE INTO COMPONENETS, LIKE HEADER, FOOTER, SIDEBAR, ETC.",
+  //   tags: [
+  //     {
+  //       name: "reactjs",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "html",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: tripguide,
+  //   source_code_link: "https://github.com/Jayesh60/YoutubeUI",
+  //   hostlink: "",
+  // },
 ];
 
-export {
-  services,
-  technologies,
-  experiences,
-  testimonials,
-  projects
-};
+export { services, technologies, experiences, testimonials, projects };

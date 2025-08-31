@@ -20,7 +20,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    await setDoc(doc(db, "contact_enquiry", form.name+"-"+form.email), {
+    await setDoc(doc(db, "contact_enquiry", form.name + "-" + form.email), {
       name: form.name,
       email: form.email,
       message: form.message,

@@ -36,6 +36,7 @@ const ExperienceCard = ({ experience }) => {
       <div>
         <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
         <Link
+          target="_blank"
           to={experience.company_website}
           className="text-[16px] font-semibold"
         >
@@ -50,6 +51,7 @@ const ExperienceCard = ({ experience }) => {
     </VerticalTimelineElement>
   );
 };
+
 const Experience = () => {
   return (
     <>
